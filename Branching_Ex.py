@@ -1,7 +1,8 @@
-years = 100
-population = [0, 10]
+sentence = "The quick brown fox jumped over the lazy dogs"
+longest = ""
+words = sentence.split()
 
-for i in range(years):
-    population.append(population[-1] + population[-2])
-
-print(population)
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+print ("The word '" + longest + "' is ", len(longest), " characters long.")
